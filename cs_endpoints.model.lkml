@@ -1,0 +1,27 @@
+connection: "cs_endpoints"
+
+# include all the views
+include: "*.view"
+
+datagroup: cs_endpoints_default_datagroup {
+  # sql_trigger: SELECT MAX(id) FROM etl_log;;
+  max_cache_age: "1 hour"
+}
+
+persist_with: cs_endpoints_default_datagroup
+
+explore: data_source {}
+
+# - explore: end_points
+
+# - explore: mapping
+#   joins:
+#     - join: data_source
+#       type: left_outer
+#       sql_on: ${mapping.data_source_id} = ${data_source.id}
+#       relationship: many_to_one
+
+#     - join: end_points
+#       type: left_outer
+#       sql_on: ${mapping.end_points_id} = ${end_points.id}
+#       relationship: many_to_one
