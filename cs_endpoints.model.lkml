@@ -25,3 +25,15 @@ explore: data_source {}
 #       type: left_outer
 #       sql_on: ${mapping.end_points_id} = ${end_points.id}
 #       relationship: many_to_one
+
+explore: mapping {
+   join: data_source {
+     relationship: many_to_many
+     sql_on: ${mapping.data_source_id} = ${data_source.id} ;;
+   }
+
+   join: end_points {
+     relationship: many_to_many
+     sql_on: ${mapping.end_points_id} = ${end_points.id} ;;
+   }
+}
