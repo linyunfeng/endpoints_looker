@@ -12,7 +12,7 @@ persist_with: cs_endpoints_default_datagroup
 
 explore: data_source {}
 
-# - explore: end_points
+explore: end_points {}
 
 # - explore: mapping
 #   joins:

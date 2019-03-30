@@ -8,12 +8,11 @@ view: mapping {
 
   dimension: end_points_id {
     type: string
-    # hidden: yes
     sql: ${TABLE}.end_points_id ;;
   }
 
   measure: count {
     type: count
-    drill_fields: [end_points.id]
+    drill_fields: []
   }
 }
