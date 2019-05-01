@@ -14,18 +14,6 @@ explore: data_source {}
 
 explore: end_points {}
 
-# - explore: mapping
-#   joins:
-#     - join: data_source
-#       type: left_outer
-#       sql_on: ${mapping.data_source_id} = ${data_source.id}
-#       relationship: many_to_one
-
-#     - join: end_points
-#       type: left_outer
-#       sql_on: ${mapping.end_points_id} = ${end_points.id}
-#       relationship: many_to_one
-
 explore: mapping {
    join: data_source {
      relationship: many_to_many
