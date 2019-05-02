@@ -18,5 +18,6 @@ view: mapping {
     type: count
     drill_fields: []
     label: "Data Source Endpoint Count"
+    hidden: yes
   }
 }
