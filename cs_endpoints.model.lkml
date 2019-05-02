@@ -25,3 +25,5 @@ explore: mapping {
      sql_on: ${mapping.end_points_id} = ${end_points.id} ;;
    }
 }
+
+label: "1CS EndPonts"
