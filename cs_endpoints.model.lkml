@@ -26,4 +26,4 @@ explore: mapping {
    }
 }
 
-label: "1CS EndPonts"
+label: "1CS EndPoints"
